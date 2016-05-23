@@ -1,0 +1,1 @@
+del gnu* *.tmp *.png *.svg

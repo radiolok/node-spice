@@ -1,0 +1,18 @@
+//create new solve system:
+setup -Off 10 -f 3200 //128 ticks per period
+load -t workbench -name wb0
+load -t acsource -name ideal3f -f 50 -Ud 220 -R 0.1 //-L 0.001
+load -t motor -name motor1 -On 0.5 -Off 5 -Rs 2 -Rr 0.8 -Ls 0.00991 -Lr 0.00991 -Lm 0.008419 -J 0.5 -p 2 -Ms 50 -Tload 2 -saveGraph//15kW
+load -t motor -name motor2 -On 1 -Off 6 -Rs 2 -Rr 0.8 -Ls 0.00991 -Lr 0.00991 -Lm 0.008419 -J 0.5 -p 2 -Ms 50 -Tload 2 -saveGraph//15kW
+load -t motor -name motor3 -On 1.5 -Off 7 -Rs 2 -Rr 0.8 -Ls 0.00991 -Lr 0.00991 -Lm 0.008419 -J 0.5 -p 2 -Ms 50 -Tload 2 -saveGraph//15kW
+load -t motor -name motor4 -On 2 -Off 8 -Rs 2 -Rr 0.8 -Ls 0.00991 -Lr 0.00991 -Lm 0.008419 -J 0.5 -p 2 -Ms 50 -Tload 2 -saveGraph//15kW
+load -t motor -name motor5 -On 2.5 -Off 9 -Rs 2 -Rr 0.8 -Ls 0.00991 -Lr 0.00991 -Lm 0.008419 -J 0.5 -p 2 -Ms 50 -Tload 2 -saveGraph//15kW
+load -t analyzer -name analyzer1 -tRMS 0.02 -U -I -P -E -Collect
+link -output ideal3f -input analyzer1
+link -output analyzer1 -input motor1
+link -output analyzer1 -input motor2
+link -output analyzer1 -input motor3
+link -output analyzer1 -input motor4
+link -output analyzer1 -input motor5
+solve
+graph 

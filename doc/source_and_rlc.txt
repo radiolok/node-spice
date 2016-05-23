@@ -1,0 +1,28 @@
+//create new solve system:
+setup -Off 10 -f 6400 //256 ticks per period
+load -t workbench -name wb0
+load -t acsource -name ideal3f -f 50 -Ud 220 -R 0.1 //-L 0.001
+load -t rlc -name rl1 -On 1 -Off 34 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl2 -On 2 -Off 35 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl3 -On 3 -Off 36 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl4 -On 4 -Off 37 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl5 -On 5 -Off 38 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl11 -On 11 -Off 24 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl21 -On 12 -Off 25 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl31 -On 13 -Off 26 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl41 -On 14 -Off 27 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t rlc -name rl51 -On 15 -Off 28 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
+load -t analyzer -name analyzer1 -tRMS 0.02 -U -I -P -E -Collect
+link -output ideal3f -input analyzer1
+link -output analyzer1 -input rl1
+link -output analyzer1 -input rl2
+link -output analyzer1 -input rl3
+link -output analyzer1 -input rl4
+link -output analyzer1 -input rl5
+link -output analyzer1 -input rl11
+link -output analyzer1 -input rl21
+link -output analyzer1 -input rl31
+link -output analyzer1 -input rl41
+link -output analyzer1 -input rl51
+solve
+graph 

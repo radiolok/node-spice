@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы исходного кода\board">
+      <UniqueIdentifier>{29399f05-ef9d-4e45-b1cd-686dd5347c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\fabric">
+      <UniqueIdentifier>{3e85755e-f11a-4e51-93fe-f7c80425efec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes">
+      <UniqueIdentifier>{dd8d98e1-e3cf-4094-a6db-3b891d8362c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\util">
+      <UniqueIdentifier>{fb795a95-fac0-48ff-a5f9-a36455357239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\workbench">
+      <UniqueIdentifier>{b01c2195-1094-49cb-9bf4-485d822058e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\consumptions">
+      <UniqueIdentifier>{3d77b783-1936-4ecc-83bc-9f2219dd0f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\joints">
+      <UniqueIdentifier>{b66fa46e-c7b3-427f-9219-13b94389f55b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\sources">
+      <UniqueIdentifier>{c7e57317-a7e1-48a3-8856-cad45552d2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\consumptions\acmotor">
+      <UniqueIdentifier>{549d0062-4fce-41dd-9517-8b3aec7d4848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\consumptions\nonlinear">
+      <UniqueIdentifier>{6eccae38-f19a-4950-bbb4-e1bd1d0f7a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\consumptions\rlc">
+      <UniqueIdentifier>{809c048a-9b7d-46ff-a314-53e251a6bdd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\joints\analyzer">
+      <UniqueIdentifier>{abcb0383-7bf1-4025-97b1-c3b08fca6e4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\joints\rlc-series">
+      <UniqueIdentifier>{9e357797-db32-44ee-95d8-26078d66b7a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\joints\transformer">
+      <UniqueIdentifier>{2bbca937-ff77-44c7-a885-b1b6db23d2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\sources\ac_source">
+      <UniqueIdentifier>{fff61f9e-5ab7-4454-9441-0d962e469696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\nodes\sources\ddspower">
+      <UniqueIdentifier>{4171ae35-b5bc-438d-8197-10bb8d779e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\board">
+      <UniqueIdentifier>{dc443da3-2405-47c9-9272-637dc781e71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\fabric">
+      <UniqueIdentifier>{2feea6cd-e65b-469b-a147-c1d660bb297c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes">
+      <UniqueIdentifier>{062c6c72-9a11-49bf-83fc-932c8fb3ccd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\consumptions">
+      <UniqueIdentifier>{45697e2d-c39a-4c76-b0d6-85a9cafea768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\consumptions\acmotor">
+      <UniqueIdentifier>{63332595-27ff-4315-8311-8c05d13b35d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\consumptions\nonlinear">
+      <UniqueIdentifier>{889c0e9d-7711-4deb-bba4-3d6af64b2933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\consumptions\rlc">
+      <UniqueIdentifier>{b823d70d-0e03-4d20-a862-c4a71cb7ac23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\joints">
+      <UniqueIdentifier>{5f98f8b0-e894-4260-ba45-1edd752d6068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\joints\analyzer">
+      <UniqueIdentifier>{c34eb37a-4032-4a4e-b76a-4e07d9342d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\joints\rlc-series">
+      <UniqueIdentifier>{24e28910-7474-4f2f-8afa-b8198ebe147a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\joints\transformer">
+      <UniqueIdentifier>{d444fe73-6cf6-4fbf-893f-29404b54d237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\sources">
+      <UniqueIdentifier>{04789764-b85d-49ce-aa96-2b21d18b2968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\sources\ac_source">
+      <UniqueIdentifier>{464b02bb-e821-4c58-970d-1c14cdd1aa9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\nodes\sources\ddspower">
+      <UniqueIdentifier>{1f9e2ca4-612b-47bd-aae9-86ec43f9db77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\util">
+      <UniqueIdentifier>{737dbc3d-1727-49b8-8c92-9d94226198e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\workbench">
+      <UniqueIdentifier>{47bd4bf8-5341-4057-87af-8c3b30ec536d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="board\Board.h">
+      <Filter>Заголовочные файлы\board</Filter>
+    </ClInclude>
+    <ClInclude Include="fabric\ConfigFabric.h">
+      <Filter>Заголовочные файлы\fabric</Filter>
+    </ClInclude>
+    <ClInclude Include="fabric\nodetypes.h">
+      <Filter>Заголовочные файлы\fabric</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\consumptions\Consumption.h">
+      <Filter>Заголовочные файлы\nodes\consumptions</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\consumptions\acmotor\ACmotor.h">
+      <Filter>Заголовочные файлы\nodes\consumptions\acmotor</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\consumptions\rlc\RLC.h">
+      <Filter>Заголовочные файлы\nodes\consumptions\rlc</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\consumptions\nonlinear\NonLinear.h">
+      <Filter>Заголовочные файлы\nodes\consumptions\nonlinear</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\Node.h">
+      <Filter>Заголовочные файлы\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\joints\analyzer\Analyzer.h">
+      <Filter>Заголовочные файлы\nodes\joints\analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\joints\transformer\Transformer.h">
+      <Filter>Заголовочные файлы\nodes\joints\transformer</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\joints\rlc-series\rlc-series.h">
+      <Filter>Заголовочные файлы\nodes\joints\rlc-series</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\sources\ac_source\ACSource.h">
+      <Filter>Заголовочные файлы\nodes\sources\ac_source</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\sources\ddspower\ddspower.h">
+      <Filter>Заголовочные файлы\nodes\sources\ddspower</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Numeric.h">
+      <Filter>Заголовочные файлы\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\ShowGraph.h">
+      <Filter>Заголовочные файлы\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Strings.h">
+      <Filter>Заголовочные файлы\util</Filter>
+    </ClInclude>
+    <ClInclude Include="workbench\Workbench.h">
+      <Filter>Заголовочные файлы\workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="deff.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="typedefs.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="gnuplot_i.hpp">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="node-spice.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="gnuplot_i.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="workbench\Workbench.cpp">
+      <Filter>Файлы исходного кода\workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Numeric.cpp">
+      <Filter>Файлы исходного кода\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\ShowGraph.cpp">
+      <Filter>Файлы исходного кода\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Strings.cpp">
+      <Filter>Файлы исходного кода\util</Filter>
+    </ClCompile>
+    <ClCompile Include="fabric\ConfigFabric.cpp">
+      <Filter>Файлы исходного кода\fabric</Filter>
+    </ClCompile>
+    <ClCompile Include="board\Board.cpp">
+      <Filter>Файлы исходного кода\board</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\consumptions\Consumption.cpp">
+      <Filter>Файлы исходного кода\nodes\consumptions</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\consumptions\acmotor\ACmotor.cpp">
+      <Filter>Файлы исходного кода\nodes\consumptions\acmotor</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\consumptions\rlc\RLC.cpp">
+      <Filter>Файлы исходного кода\nodes\consumptions\rlc</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\consumptions\nonlinear\NonLinear.cpp">
+      <Filter>Файлы исходного кода\nodes\consumptions\nonlinear</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\joints\analyzer\Analyzer.cpp">
+      <Filter>Файлы исходного кода\nodes\joints\analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\joints\transformer\Transformer.cpp">
+      <Filter>Файлы исходного кода\nodes\joints\transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\joints\rlc-series\rlc-series.cpp">
+      <Filter>Файлы исходного кода\nodes\joints\rlc-series</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\sources\ac_source\ACSource.cpp">
+      <Filter>Файлы исходного кода\nodes\sources\ac_source</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\sources\ddspower\ddspower.cpp">
+      <Filter>Файлы исходного кода\nodes\sources\ddspower</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\Node.cpp">
+      <Filter>Файлы исходного кода\nodes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
