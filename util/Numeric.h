@@ -17,6 +17,7 @@ GNU General Public License for more details.
 #define NUMERIC_H_
 
 #include <vector>
+#include <stddef.h>
 
 
 

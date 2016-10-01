@@ -1,5 +1,5 @@
 //create new solve system:
-setup -Off 10 -f 3200 //128 ticks per period
+setup -Off 20 -f 3200 //128 ticks per period
 load -t workbench -name wb0
 load -t acsource -name ideal3f -f 50 -Ud 220 -R 0.1 //-L 0.001
 //load -t rlc -name rl1 -On 1 -Off 4 -Ra 100 -Rb 100 -Rc 100 -La 0.01 -Lb 0.01 -Lc 0.01
