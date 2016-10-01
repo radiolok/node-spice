@@ -23,7 +23,12 @@ GNU General Public License for more details.
 
 using namespace std;
 #include <stdio.h>
+
+#if defined(WIN32)
 #include <tchar.h>
+
+#endif
+
 #include <fstream>
 #include <iostream>
 #include <sstream>      // std::ostringstream
