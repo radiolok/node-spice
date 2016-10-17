@@ -19,14 +19,8 @@ GNU General Public License for more details.
 Board::Board(vector<parameters>& param) {
 
 	//Reset Pointers
-	analyzerBasePtr = 0;
-	ACSourceBasePtr = 0;
-	ACMotorBasePtr = 0;
-	RLCPtr = 0;
-	TransformerPtr = 0;
-	RLCseriesPtr = 0;
-	rootworkbench = 0;
-	workbench = 0;
+	rootworkbench = nullptr;
+	workbench = nullptr;
 
 
 
@@ -76,36 +70,32 @@ status Board::AddNode(vector<parameters>& param){
 	}
 	if ("acsource" == sourcetype){
 
-		ACSourceBasePtr = new ACSource(param);
-		workbench->AddNode(ACSourceBasePtr);
+		workbench->AddNode(new ACSource(param));
 
 	}
 	else if ("motor" == sourcetype){
 
-		ACMotorBasePtr = new AC_motor(param);
-		workbench->AddNode(ACMotorBasePtr);
+		workbench->AddNode(new AC_motor(param));
 
 	}
 	else if ("rlc" == sourcetype){
 
-		RLCPtr = new RLC(param);
-		workbench->AddNode(RLCPtr);
+		workbench->AddNode(new RLC(param));
 
 	}
 	else if ("analyzer" == sourcetype){
 
-		analyzerBasePtr = new Analyzer(param);
-		workbench->AddNode(analyzerBasePtr);
+		workbench->AddNode(new Analyzer(param));
 
 	}
 	else if ("rlc_series" == sourcetype){
-		RLCseriesPtr = new RLCseries(param);
-		workbench->AddNode(RLCseriesPtr);
+
+		workbench->AddNode(new RLCseries(param));
 	}
 
 	else if ("transformer" == sourcetype){
-		TransformerPtr = new Transformer(param);
-		workbench->AddNode(TransformerPtr);
+
+		workbench->AddNode(new Transformer(param));
 
 	}
 	else{

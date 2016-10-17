@@ -54,14 +54,6 @@ public:
 
 private:
 
-	//pointers for elements creating
-	Analyzer *analyzerBasePtr;
-	ACSource  *ACSourceBasePtr;
-	AC_motor *ACMotorBasePtr;
-	RLC *RLCPtr;
-	RLCseries *RLCseriesPtr;
-	Transformer *TransformerPtr;
-
 	//Root workbench pointer
 	Node* rootworkbench;
 
